@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Grocery List</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans:700,300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="section group">
+		<div class="col span_4_of_8 two-offset main">
+			<header>
+			<h1>Grocery List</h1>
+			<h2>An online tool for creating, editing and viewing your grocery list.</h2>
+			</header>
+			<div class="button-container">
+				<div class="add-item-container">
+					<a href="#" class="add-button">+</a>
+					<form class="add-form">
+						<h3>Grocery item:</h3>
+						<input type="text" name="grocery-item" value="enter new grocery item here" class="text-entry">
+						<h3>Grocery category:</h3>
+						<ul>
+						<li>
+							<input type="radio" name "item-select" value="produce">Produce
+						</li>
+						<li>
+							<input type="radio" name "item-select" value="dairy">Dairy
+						</li>
+						<li>
+							<input type="radio" name "item-select" value="meat/deli">Meat/Deli
+						</li>
+						<li>
+							<input type="radio" name "item-select" value="frozen foods">Frozen Foods
+						</li>
+						<li>
+							<input type="radio" name "item-select" value="dry goods">Dry Goods
+						</li>
+						<li>
+							<input type="radio" name "item-select" value="pharmacy">Pharmacy
+						</li>
+						<li>
+							<input type="radio" name "item-select" value="other">Other
+						</li>
+					</form>
+				</div>
+				<div class="dropdown">
+					<a href="#"class="show">Show</a>
+					<ul>
+						<li><a href="#">All</a></li>
+						<li><a href="#">Produce</a></li>
+						<li><a href="#">Dairy</a></li>
+						<li><a href="#">Meat/Deli</a></li>
+						<li><a href="#">Frozen Foods</a></li>
+						<li><a href="#">Dry Goods</a></li>
+						<li><a href="#">Pharmacy</a></li>
+						<li><a href="#">Other</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="list-box">
+				<ul></ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
