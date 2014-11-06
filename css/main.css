@@ -143,7 +143,8 @@ body {
 .main {
 	background-color: #F3F5D6;
 	height: 100%;
-	outline: 2px solid black;
+	border-left: 10px solid #02004A;
+	border-right: 10px solid #02004A;
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -153,11 +154,18 @@ body {
 }
 .main > header > h1 {
 	font-family: 'Lobster', cursive;
-	font-size: 50px;
-	margin-bottom: 23px;
+	font-size: 58px;
+	color: #02004A;
+	margin-bottom: 30px;
+	text-shadow: 1px 2px 2px gray;
 }
 .main > header > h2 {
 	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #A26C20;
+	margin-bottom: 30px;
+	font-variant: small-caps;
+	font-size: 20px;
 }
 .button-container {
 	width: 90%;
@@ -166,6 +174,7 @@ body {
 	margin: 0 auto;
 	max-width: 500px;
 	text-align: center;
+	margin-bottom: 	15px;
 }
 .add-item-container > a {
 	font-size: 25px;
@@ -180,20 +189,44 @@ body {
 .add-form {
 	background-color: #A5C04F;
 	padding: 13px;
-	margin-left: -160px;
+	margin-left: -161px;
 	border-radius: 5px 0px 5px 5px;
 	margin-top: -2px;
 	line-height: 155%;
 	position: absolute;
 	text-align: left;
 	color: white;
+	font-family: 'Open Sans', sans-serif;
+	display: none;
+}
+.add-form h3 {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 	5px;
+}
+.add-item-button {
+	padding: 5px 10px;
+	background-color: #a26c20;
+	border-radius: 	6px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 25px;
+	font-size: 	20px;
+	line-height: 100%;
+	color: 	white;
+	font-weight: bold;
+	border: 2px solid white;
+	font-family: 'Lobster', cursive;
 }
 .list-box {
 	width: 90%;
 	height: 500px;
-	outline: 2px solid black;
+	/*border: 5px solid #02004a;*/
+	background-color: #CFD1B7;
+	border-radius: 10px;
 	margin: 0 auto;
-	max-width: 500px;
+	max-width: 400px;
 }
 .dropdown {
 	display: inline-block;
@@ -205,16 +238,25 @@ body {
 	border-radius: 25px 3px;
 	font-size: 25px;
 	padding: 7px;
+	font-family: 'Lobster', cursive;
+	letter-spacing: .03em;
+	display: inline-block;
 }
 .dropdown > ul {
 	display: none;
 	position: absolute;
 	background-color: #a5c04f;
 	border-radius: 0px 5px 5px 5px;
-	margin-top: 6px;
+	margin-top: -2px;
 	padding: 13px;
 	line-height: 135%;
 	text-align: left;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 155%;
+}
+.dropdown > ul a {
+	text-decoration: none;
+	color: white;
 }
 .add-item-container {
 	display: inline-block;
@@ -222,7 +264,8 @@ body {
 }
 .add-button {
 	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
 }
 .add-form > .text-entry {
-	margin-bottom: 15px;
+	margin-bottom: 19px;
 }
