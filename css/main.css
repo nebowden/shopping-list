@@ -221,7 +221,7 @@ body {
 }
 .list-box {
 	width: 90%;
-	height: 500px;
+	height: 600px;
 	/*border: 5px solid #02004a;*/
 	background-color: #CFD1B7;
 	border-radius: 10px;
@@ -242,7 +242,7 @@ body {
 	letter-spacing: .03em;
 	display: inline-block;
 }
-.dropdown > ul {
+.dropdown > .show-options {
 	display: none;
 	position: absolute;
 	background-color: #a5c04f;
@@ -254,9 +254,12 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 155%;
 }
-.dropdown > ul a {
+.show-options a {
 	text-decoration: none;
 	color: white;
+}
+.dropdown > ul a:hover {
+	color: #A26C20;
 }
 .add-item-container {
 	display: inline-block;
@@ -268,4 +271,19 @@ body {
 }
 .add-form > .text-entry {
 	margin-bottom: 19px;
+}
+.checked {
+	background-color: #656659;
+}
+.shopping-list > li {
+	font-size: 22px;
+	font-family: 'Open Sans', sans-serif;
+}
+.shopping-list input[type=checkbox], .shoping-list i {
+	margin-right: 10px;
+}
+.shopping-list input[type=checkbox] {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
 }

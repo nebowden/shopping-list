@@ -7,7 +7,9 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans:700,300,400' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/font-awesome-4.2.0/css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 </head>
 <body>
 	<div class="section group">
@@ -24,33 +26,34 @@
 						<input type="text" name="grocery-item" value="enter new grocery item here" class="text-entry">
 						<h3>Grocery category:</h3>
 						<ul>
-						<li>
-							<input type="radio" name "item-select" value="produce">Produce
-						</li>
-						<li>
-							<input type="radio" name "item-select" value="dairy">Dairy
-						</li>
-						<li>
-							<input type="radio" name "item-select" value="meat/deli">Meat/Deli
-						</li>
-						<li>
-							<input type="radio" name "item-select" value="frozen foods">Frozen Foods
-						</li>
-						<li>
-							<input type="radio" name "item-select" value="dry goods">Dry Goods
-						</li>
-						<li>
-							<input type="radio" name "item-select" value="pharmacy">Pharmacy
-						</li>
-						<li>
-							<input type="radio" name "item-select" value="other">Other
-						</li>
+							<li>
+								<input type="radio" name="item-select" value="produce">Produce
+							</li>
+							<li>
+								<input type="radio" name="item-select" value="dairy">Dairy
+							</li>
+							<li>
+								<input type="radio" name="item-select" value="meat/deli">Meat/Deli
+							</li>
+							<li>
+								<input type="radio" name="item-select" value="frozen foods">Frozen Foods
+							</li>
+							<li>
+								<input type="radio" name="item-select" value="dry goods">Dry Goods
+							</li>
+							<li>
+								<input type="radio" name="item-select" value="pharmacy">Pharmacy
+							</li>
+							<li>
+								<input type="radio" name="item-select" value="other">Other
+							</li>
+						</ul>
 						<a href="#" class="add-item-button">add item</a>
 					</div>
 				</div>
 				<div class="dropdown">
 					<a href="#"class="show">Show</i></a>
-					<ul>
+					<ul class="show-options">
 						<li><a href="#">All</a></li>
 						<li><a href="#">Produce</a></li>
 						<li><a href="#">Dairy</a></li>
@@ -63,7 +66,7 @@
 				</div>
 			</div>
 			<div class="list-box">
-				<ul></ul>
+				<ul class="shopping-list"></ul>
 			</div>
 		</div>
 	</div>
