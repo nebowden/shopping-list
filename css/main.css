@@ -278,12 +278,43 @@ body {
 .shopping-list > li {
 	font-size: 22px;
 	font-family: 'Open Sans', sans-serif;
-}
-.shopping-list input[type=checkbox], .shoping-list i {
-	margin-right: 10px;
+	border-bottom: 1px dotted;
 }
 .shopping-list input[type=checkbox] {
+	margin-left: 13px;
+	margin-right: 7px;
 	width: 20px;
 	height: 20px;
 	vertical-align: middle;
+}
+.shopping-list i {
+	margin-right: 20px;
+	color: #A30300;
+	vertical-align: middle;
+}
+.fa-close:hover {
+	cursor: pointer;
+}
+
+/*remove class colors*/
+.produce-class {
+	color: green;
+}
+.dairy-class {
+	color: white;
+}
+.meat-deli-class {
+	color: red;
+}
+.frozen-foods-class {
+	color: blue
+}
+.dry-goods-class {
+	color: silver;
+}
+.pharmacy-class {
+	color: black;
+}
+.other-class {
+	color: yellow;
 }
