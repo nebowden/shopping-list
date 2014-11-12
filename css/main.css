@@ -91,9 +91,10 @@
   margin-left: 88.9%;
 }
 
-
-
 /* end of grid styling */
+
+
+/*general styling*/
 
 html, body, .section {
 	height: 100%;
@@ -103,9 +104,6 @@ body {
 	background: url('../images/GrxcU65.png');
 }
 
-/*.section {
-	height: 100%;
-} */
 .main {
 	background-color: #F3F5D6;
 	min-height: 100%;
@@ -114,10 +112,15 @@ body {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+
+/*header styling */
+
 .main > header {
 	text-align: center;
 	padding: 20px;
 }
+
 .main > header > h1 {
 	font-family: 'Lobster', cursive;
 	font-size: 70px;
@@ -126,6 +129,7 @@ body {
 	margin-bottom: 30px;
 	text-shadow: 1px 2px 2px gray;
 }
+
 .main > header > h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
@@ -134,6 +138,10 @@ body {
 	font-variant: small-caps;
 	font-size: 20px;
 }
+
+
+/*top button and drop-down menu styling */
+
 .button-container {
 	width: 90%;
 	height: 40px;
@@ -142,6 +150,7 @@ body {
 	text-align: center;
 	margin-bottom: 	10px;
 }
+
 .clear-button {
 	background-color: #a5c04f;
 	text-decoration: none;
@@ -152,16 +161,20 @@ body {
 	letter-spacing: .03em;
 	display: inline-block;
 }
+
 .clear-button > a {
 	text-decoration: none;
 	color: white;
 }
+
 .clear-button, .add-button, .show, .show-options, .add-form {
 	box-shadow: 2px 2px 4px gray;
 }
+
 .clear-button:hover, .add-button:hover, .show:hover {
 	box-shadow: 4px 4px 4px gray;
 }
+
 .add-item-container > a {
 	font-size: 25px;
 	border-radius: 3px 17px;
@@ -171,6 +184,7 @@ body {
 	display: inline-block;
 	text-decoration: none;
 }
+
 .add-form {
 	background-color: #A5C04F;
 	padding: 13px;
@@ -183,11 +197,13 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	display: none;
 }
+
 .add-form h3 {
 	font-weight: bold;
 	font-size: 18px;
 	margin-bottom: 	5px;
 }
+
 .add-item-button {
 	padding: 5px 10px;
 	border-radius: 	6px;
@@ -207,22 +223,12 @@ body {
 .add-item-button:hover {
 	background-color: #A26C20;
 }
-.list-box {
-	width: 90%;
-	min-height: 600px;
-	/*border: 5px solid #02004a;*/
-	background-color: #CFD1B7;
-	border-radius: 10px;
-	margin: 0 auto;
-	max-width: 400px;
-	margin-bottom: 30px;
-	padding-top: 9px;
-	padding-bottom: 9px;
-}
+
 .dropdown {
 	display: inline-block;
 	margin-right: 6px;
 }
+
 .show {
 	background-color: #a5c04f;
 	color: white;
@@ -234,6 +240,7 @@ body {
 	letter-spacing: .03em;
 	display: inline-block;
 }
+
 .show-options {
 	display: none;
 	position: absolute;
@@ -247,27 +254,44 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 155%;
 }
+
 .show-options a {
 	text-decoration: none;
 	color: white;
 }
+
 .dropdown > ul a:hover {
 	color: #A26C20;
 }
+
 .add-item-container {
 	display: inline-block;
 	margin-right: 6px;
 }
+
 .add-button {
 	font-weight: bold;
 	font-family: 'Open Sans', sans-serif;
 }
+
 .add-form > .text-entry {
 	margin-bottom: 19px;
 }
-.checked {
-	background-color: #656659;
+
+
+/*shopping list styling*/
+.list-box {
+	width: 90%;
+	min-height: 600px;
+	background-color: #CFD1B7;
+	border-radius: 10px;
+	margin: 0 auto;
+	max-width: 400px;
+	margin-bottom: 30px;
+	padding-top: 9px;
+	padding-bottom: 9px;
 }
+
 .shopping-list > li {
 	font-size: 20px;
 	font-family: 'Open Sans', sans-serif;
@@ -276,9 +300,11 @@ body {
 	padding-bottom: 2px;
 	color: #02004A;
 }
+
 .shopping-list > li:first-child {
 	border-top: 1px dotted;
 }
+
 .shopping-list input[type=checkbox] {
 	margin-left: 15px;
 	margin-right: 9px;
@@ -288,17 +314,25 @@ body {
 	margin-bottom: 2px;
 	margin-top: 0;
 }
+
 .shopping-list i {
 	margin-right: 26px;
 	color: #A30300;
 	vertical-align: middle;
 	margin-bottom: 1px;
 }
+
 .fa-close:hover {
 	cursor: pointer;
 }
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+.checked {
+	background-color: #656659;
+}
+
+
+/*  media queries */
+
 @media only screen and (max-width: 950px) {
 	.main {
 		width: 61.9%;
@@ -370,22 +404,4 @@ body {
 	.add-form {
 		margin-left: -30px;
 	}
-	/*.add-form {
-		width: 148px;
-	}
-	.add-form h3 {
-		font-size: 16px;
-		margin-bottom: 	4px;
-	}
-	.add-form > .text-entry {
-		margin-bottom: 12px;
-		font-size: 12px;
-	}
-	.add-form ul {
-		font-size: 15px;
-	}
-	.add-item-button {
-		font-size: 18px;
-		margin-top: 15px;
-	}*/
 }
