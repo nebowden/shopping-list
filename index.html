@@ -19,51 +19,54 @@
 			<h2>an online tool for creating, editing and viewing your grocery list.</h2>
 			</header>
 			<div class="button-container">
-				<div class="add-item-container">
-					<a href="#" class="add-button">+</a>
-					<div class="add-form">
-						<h3>Grocery item:</h3>
-						<input type="text" name="grocery-item" value="enter new grocery item here" class="text-entry">
-						<h3>Grocery category:</h3>
-						<ul>
-							<li>
-								<input type="radio" name="item-select" value="produce">Produce
-							</li>
-							<li>
-								<input type="radio" name="item-select" value="dairy">Dairy
-							</li>
-							<li>
-								<input type="radio" name="item-select" value="meat/deli">Meat/Deli
-							</li>
-							<li>
-								<input type="radio" name="item-select" value="frozen foods">Frozen Foods
-							</li>
-							<li>
-								<input type="radio" name="item-select" value="dry goods">Dry Goods
-							</li>
-							<li>
-								<input type="radio" name="item-select" value="pharmacy">Pharmacy
-							</li>
-							<li>
-								<input type="radio" name="item-select" value="other" checked="checked">Other
-							</li>
+					<div class="dropdown">
+						<a href="#"class="show">Show</a>
+						<ul class="show-options">
+							<li><a href="#" class="show-all">All</a></li>
+							<li><a href="#" class="show-produce">Produce</a></li>
+							<li><a href="#" class="show-dairy">Dairy</a></li>
+							<li><a href="#" class="show-meat">Meat/Deli</a></li>
+							<li><a href="#" class="show-frozen">Frozen Foods</a></li>
+							<li><a href="#" class="show-dry">Dry Goods</a></li>
+							<li><a href="#" class="show-pharmacy">Pharmacy</a></li>
+							<li><a href="#" class="show-other">Other</a></li>
 						</ul>
-						<a href="#" class="add-item-button">add item</a>
 					</div>
-				</div>
-				<div class="dropdown">
-					<a href="#"class="show">Show</i></a>
-					<ul class="show-options">
-						<li><a href="#" class="show-all">All</a></li>
-						<li><a href="#" class="show-produce">Produce</a></li>
-						<li><a href="#" class="show-dairy">Dairy</a></li>
-						<li><a href="#" class="show-meat">Meat/Deli</a></li>
-						<li><a href="#" class="show-frozen">Frozen Foods</a></li>
-						<li><a href="#" class="show-dry">Dry Goods</a></li>
-						<li><a href="#" class="show-pharmacy">Pharmacy</a></li>
-						<li><a href="#" class="show-other">Other</a></li>
-					</ul>
-				</div>
+					<div class="add-item-container">
+						<a href="#" class="add-button">+</a>
+						<div class="add-form">
+							<h3>Grocery item:</h3>
+							<input type="text" name="grocery-item" value="enter new grocery item here" class="text-entry">
+							<h3>Grocery category:</h3>
+							<ul>
+								<li>
+									<input type="radio" name="item-select" value="produce">Produce
+								</li>
+								<li>
+									<input type="radio" name="item-select" value="dairy">Dairy
+								</li>
+								<li>
+									<input type="radio" name="item-select" value="meat/deli">Meat/Deli
+								</li>
+								<li>
+									<input type="radio" name="item-select" value="frozen foods">Frozen Foods
+								</li>
+								<li>
+									<input type="radio" name="item-select" value="dry goods">Dry Goods
+								</li>
+								<li>
+									<input type="radio" name="item-select" value="pharmacy">Pharmacy
+								</li>
+								<li>
+									<input type="radio" name="item-select" value="other" checked="checked">Other
+								</li>
+							</ul>
+							<a href="#" class="add-item-button">add item</a>
+						</div>
+					</div>
+					<div class="clear-button">
+						<a href="#" class="clear-all">Clear</a>
+					</div>
 			</div>
 			<div class="list-box">
 				<ul class="shopping-list"></ul>

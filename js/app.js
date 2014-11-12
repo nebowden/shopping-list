@@ -1,19 +1,24 @@
 $(document).ready(function(){
 
 //slide down menu for filtering list items
-	$('.show').click(function(){
+	$('.show').click(function(event){
+		event.preventDefault();
 		$('.show-options').slideToggle();
+		$('.add-form').slideUp();
 	});
 
 //slide down menu for adding list items
-	$('.add-button').click(function(){
+	$('.add-button').click(function(event){
+		event.preventDefault();
 		$('.add-form').slideToggle();
+		$('.show-options').slideUp();
 	});
 
 //clear text box
 	$(".text-entry").click(function(){
 		$(this).val('');
 	});
+
 //adding input to list form and assigning categories to added items
 var addItem = function(){
 		var item_name_input = $('.add-item-container').find("input[name='grocery-item']").val();
@@ -53,7 +58,8 @@ var assignCategory = function (){
 		};
 	};
 
-$('.add-item-button').on('click', function(){
+$('.add-item-button').on('click', function(event){
+	event.preventDefault();
 	addItem();
 	assignCategory();
 	});
@@ -85,7 +91,8 @@ $(document).click(function(){
 });
 
 //filtering by shopping category
-$('.show-produce').click(function(){
+$('.show-produce').click(function(event){
+	event.preventDefault();
 	$('.produce-class').show();
 	$('.dairy-class').hide();
 	$('.meat-deli-class').hide();
@@ -95,7 +102,8 @@ $('.show-produce').click(function(){
 	$('.other-class').hide();
 });
 
-$('.show-all').click(function(){
+$('.show-all').click(function(event){
+	event.preventDefault();
 	$('.produce-class').show();
 	$('.dairy-class').show();
 	$('.meat-deli-class').show();
@@ -105,7 +113,8 @@ $('.show-all').click(function(){
 	$('.other-class').show();
 });
 
-$('.show-dairy').click(function(){
+$('.show-dairy').click(function(event){
+	event.preventDefault();
 	$('.produce-class').hide();
 	$('.dairy-class').show();
 	$('.meat-deli-class').hide();
@@ -115,7 +124,8 @@ $('.show-dairy').click(function(){
 	$('.other-class').hide();
 });
 
-$('.show-meat').click(function(){
+$('.show-meat').click(function(event){
+	event.preventDefault();
 	$('.produce-class').hide();
 	$('.dairy-class').hide();
 	$('.meat-deli-class').show();
@@ -125,7 +135,8 @@ $('.show-meat').click(function(){
 	$('.other-class').hide();
 });
 
-$('.show-frozen').click(function(){
+$('.show-frozen').click(function(event){
+	event.preventDefault();
 	$('.produce-class').hide();
 	$('.dairy-class').hide();
 	$('.meat-deli-class').hide();
@@ -135,7 +146,8 @@ $('.show-frozen').click(function(){
 	$('.other-class').hide();
 });
 
-$('.show-dry').click(function(){
+$('.show-dry').click(function(event){
+	event.preventDefault();
 	$('.produce-class').hide();
 	$('.dairy-class').hide();
 	$('.meat-deli-class').hide();
@@ -145,7 +157,8 @@ $('.show-dry').click(function(){
 	$('.other-class').hide();
 });
 
-$('.show-pharmacy').click(function(){
+$('.show-pharmacy').click(function(event){
+	event.preventDefault();
 	$('.produce-class').hide();
 	$('.dairy-class').hide();
 	$('.meat-deli-class').hide();
@@ -155,7 +168,8 @@ $('.show-pharmacy').click(function(){
 	$('.other-class').hide();
 });
 
-$('.show-other').click(function(){
+$('.show-other').click(function(event){
+	event.preventDefault();
 	$('.produce-class').hide();
 	$('.dairy-class').hide();
 	$('.meat-deli-class').hide();
@@ -178,5 +192,12 @@ $('.dropdown').click(function(event) {
 $(document).click(function(){
 	$('.show-options').slideUp();
 });
+
+//clear all
+
+$(".clear-all").on('click', function(event){
+	event.preventDefault();
+	$('.shopping-list').find('li').remove();
+	});
 
 })
