@@ -81,15 +81,6 @@ $('.add-item-container').keydown(function (event){
 		$(this).closest("li").remove();
 		});
 
-//close form for adding items
-$('.add-item-container').click(function(event) {
-	event.stopPropagation();
-});
-
-$(document).click(function(){
-	$('.add-form').slideUp();
-});
-
 //filtering by shopping category
 $('.show-produce').click(function(event){
 	event.preventDefault();
@@ -179,7 +170,7 @@ $('.show-other').click(function(event){
 	$('.other-class').show();
 });
 
-//close show menu
+//close add item form and show menu
 
 $('.show-options a').click(function(){
 	$('.show-options').slideUp();
@@ -189,8 +180,13 @@ $('.dropdown').click(function(event) {
 	event.stopPropagation();
 });
 
+$('.add-item-container').click(function(event) {
+	event.stopPropagation();
+});
+
 $(document).click(function(){
 	$('.show-options').slideUp();
+	$('.add-form').slideUp();
 });
 
 //clear all

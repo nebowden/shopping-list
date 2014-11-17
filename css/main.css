@@ -330,6 +330,9 @@ body {
 	background-color: #656659;
 }
 
+.list-border {
+	border-top: 1px dotted #02004A;;
+}
 
 /*  media queries */
 
